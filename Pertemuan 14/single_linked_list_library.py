@@ -40,16 +40,13 @@ while True:
     if pilihan == "1":
         nama = input("Masukkan nama pengunjung: ")
         judul = input("Masukkan judul buku yang dipinjam: ")
-
         if nama in pengunjung:
             pengunjung_ini = pengunjung[nama]
         else:
             pengunjung_ini = Pengunjung(nama)
             pengunjung[nama] = pengunjung_ini
-
         pengunjung_ini.pinjam_buku(judul)
         print("Peminjaman buku dicatat!")
-
     elif pilihan == "2":
         nama = input("Masukkan nama pengunjung: ")
         if nama in pengunjung:
