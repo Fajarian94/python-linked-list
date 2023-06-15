@@ -30,13 +30,11 @@ class Pengunjung:
 
 # Contoh penggunaan
 pengunjung = {}
-
 while True:
     print("\nMenu:")
     print("1. Catat peminjaman buku")
     print("2. Cetak daftar buku yang dipinjam oleh pengunjung")
     print("3. Keluar")
-
     pilihan = input("Pilih menu (1/2/3): ")
 
     if pilihan == "1":
@@ -59,10 +57,8 @@ while True:
             pengunjung_ini.cetak_buku_dipinjam()
         else:
             print("Pengunjung dengan nama tersebut tidak ditemukan.")
-
     elif pilihan == "3":
         print("Terima kasih!")
         break
-
     else:
         print("Pilihan tidak valid. Silakan pilih menu yang tersedia.")
